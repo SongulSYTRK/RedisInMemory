@@ -1,0 +1,40 @@
+redis-cli ile redis ayaða kaldýrýlýr
+
+REDÝS VERÝ TÝPLERÝ :
+1-STRÝNG: eðer string data olarak kaydetmek istiyorsak "Set Name songül" þeklinde kayýt atýlýr .
+                       datayý okumak istiyorsan "Get name " þeklinde veriyi okuyabiliriz
+                       hangi index aralýðýnda okumak için "getrange name 0 2 " 0-2 arasýndaki indexleri okur 
+                       "set ziyaretci 1000"     "get ziyaretci" "INCR ZÝYARETCÝ" : BÝR BÝR ARTIRIR SAYIYI
+                                                                "INCRBY ZÝYARETCÝ 10" :10 10 ARTIRIR 
+                                                                "INCRBY ZÝYARETCÝ 20" :20 20 ARTIRIR 
+                                                                "dECR ZÝYARETCÝ " :1 1 aZALIR 
+                                                                "dECRbY ZÝYARETCÝ 10" :10 10 aZALIR 
+                                                                "APPEND name emre "  çýkýtýsý:songülemre olur 
+2-LÝST: LPUSH kitaplar kitap1 
+        LPUSH kitaplar kitap2  datalarý kaydediyoruz.
+        (leftpush: dizinin baþýna ekler)
+        RPUSH kitaplar kitap3
+        (rightpush dizinin sonuna ekler)
+
+        LRANGE kitaplar 0 2 (0 ve 2 index arasýný alýr .-1 dersek tüm datalarý çeker )
+
+        Datasilme komutlarý ;  LPOP kitaplar: dizinin baþýndan siler 
+                               RPOP kitaplar: dizinin sonundan siler 
+
+        LINDEX kitaplar 1 :1.indextekini verir 
+3-Redis Set: veriler unique olmak zorundadýr.
+             veriler random eklenir bize deðildir kararý.
+             "SADD color blue"
+             "SADD color blue"
+             "SMEMBERS color ": TÜM DATALARI GÖRÜNTÜLERÝZ
+             "SREM color green": silme iþlemini yapar 
+
+4-RedisSortedSet:Sýralamasý belirleyebiliyoruz.
+                 "ZADD kitaplar 1 kitap1" :1.sýrada olsun  
+                 "ZADD kitaplar 5 kitap5" :5.sýrada olsun  
+                 "ZRANGE kitaplar  -1 WÝTHSCORES" :Tüm datalarý getirir
+                 "Zrem kitaplar kitap1": kitap1 silinir
+
+5-REDÝSHASH : "HMSET sözlük pen  kalem" :veriyi kaydeder
+        
+
