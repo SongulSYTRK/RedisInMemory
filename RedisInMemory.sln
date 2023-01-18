@@ -10,7 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		redisInfo.txt = redisInfo.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDistributedCacheRedisApp.Web", "IDistributedCacheRedisApp.Web\IDistributedCacheRedisApp.Web.csproj", "{F8D67F6A-C80C-4972-BEA7-C18C87AA36FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDistributedCacheRedisApp.Web", "IDistributedCacheRedisApp.Web\IDistributedCacheRedisApp.Web.csproj", "{F8D67F6A-C80C-4972-BEA7-C18C87AA36FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisExchangeAPI.Web", "RedisExchangeAPI.Web\RedisExchangeAPI.Web.csproj", "{B95034A5-9FA3-40A5-914C-7D658B379436}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisExample.API", "RedisExample.API\RedisExample.API.csproj", "{10446EE5-6C5B-458C-B844-E580C39E7689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisExampleApp.Cache", "RedisExampleApp.Cache\RedisExampleApp.Cache.csproj", "{B343F10D-6334-44CE-8296-58C8C03535E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +32,18 @@ Global
 		{F8D67F6A-C80C-4972-BEA7-C18C87AA36FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8D67F6A-C80C-4972-BEA7-C18C87AA36FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8D67F6A-C80C-4972-BEA7-C18C87AA36FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B95034A5-9FA3-40A5-914C-7D658B379436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95034A5-9FA3-40A5-914C-7D658B379436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95034A5-9FA3-40A5-914C-7D658B379436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95034A5-9FA3-40A5-914C-7D658B379436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10446EE5-6C5B-458C-B844-E580C39E7689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10446EE5-6C5B-458C-B844-E580C39E7689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10446EE5-6C5B-458C-B844-E580C39E7689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10446EE5-6C5B-458C-B844-E580C39E7689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B343F10D-6334-44CE-8296-58C8C03535E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B343F10D-6334-44CE-8296-58C8C03535E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B343F10D-6334-44CE-8296-58C8C03535E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B343F10D-6334-44CE-8296-58C8C03535E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
